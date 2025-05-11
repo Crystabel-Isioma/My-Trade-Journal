@@ -1,0 +1,1911 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Primary Leverage' datatype='string' name='[Parameter 1]' param-domain-type='any' role='measure' type='nominal' value='&quot;10x&quot;'>
+        <calculation class='tableau' formula='&quot;10x&quot;' />
+      </column>
+    </datasource>
+    <datasource caption='my trade journal (my trade journal)' inline='true' name='federated.14b1h8d0u9d5xr148i0j5100dtlo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='my trade journal' name='excel-direct.0rsy5yq0rm5tvc12xkkyo1vtjnyk'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/USER PC/Documents/my trade journal.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0rsy5yq0rm5tvc12xkkyo1vtjnyk' name='my trade journal' table='[&apos;my trade journal$&apos;]' type='table'>
+          <columns gridOrigin='A1:G28:no:A1:G28:0' header='yes' outcome='6'>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='string' name='Coin' ordinal='1' />
+            <column datatype='real' name='Entry Price' ordinal='2' />
+            <column datatype='real' name='Exit Price' ordinal='3' />
+            <column datatype='real' name='ROI %' ordinal='4' />
+            <column datatype='string' name='Leverage' ordinal='5' />
+            <column datatype='string' name='Trade Outcome' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[my trade journal]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G28:no:A1:G28:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[my trade journal]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[my trade journal_C67A09DBC5F840F48681EDF6E9D6A617]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Coin</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Coin]</local-name>
+            <parent-name>[my trade journal]</parent-name>
+            <remote-alias>Coin</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RNG_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[my trade journal_C67A09DBC5F840F48681EDF6E9D6A617]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entry Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Entry Price]</local-name>
+            <parent-name>[my trade journal]</parent-name>
+            <remote-alias>Entry Price</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[my trade journal_C67A09DBC5F840F48681EDF6E9D6A617]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exit Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Exit Price]</local-name>
+            <parent-name>[my trade journal]</parent-name>
+            <remote-alias>Exit Price</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[my trade journal_C67A09DBC5F840F48681EDF6E9D6A617]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ROI %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ROI %]</local-name>
+            <parent-name>[my trade journal]</parent-name>
+            <remote-alias>ROI %</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[my trade journal_C67A09DBC5F840F48681EDF6E9D6A617]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Leverage</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Leverage]</local-name>
+            <parent-name>[my trade journal]</parent-name>
+            <remote-alias>Leverage</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RNG_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[my trade journal_C67A09DBC5F840F48681EDF6E9D6A617]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trade Outcome</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Trade Outcome]</local-name>
+            <parent-name>[my trade journal]</parent-name>
+            <remote-alias>Trade Outcome</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RNG_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[my trade journal_C67A09DBC5F840F48681EDF6E9D6A617]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Win Rate' datatype='real' name='[Calculation_990791921882759168]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum(IF[Trade Outcome]=&quot;win&quot; THEN 1 ELSE 0 END) / COUNT([Trade Outcome])' />
+      </column>
+      <column caption='Volatility Index' datatype='real' name='[Calculation_990791921884807169]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='STDEV([ROI %])' />
+      </column>
+      <column caption='Primary Leverage' datatype='string' name='[Calculation_990791922116071431]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 1]' />
+      </column>
+      <column caption='Loss Rate ' datatype='real' name='[Calculation_990791922119880712]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum(IF[Trade Outcome]=&quot;loss&quot; THEN 1 ELSE 0 END) / COUNT([Trade Outcome])' />
+      </column>
+      <column datatype='string' name='[Coin]' role='dimension' type='nominal' />
+      <column datatype='string' datatype-customized='true' name='[Leverage]' role='dimension' type='nominal' />
+      <column caption='Roi %' datatype='real' name='[ROI %]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Trade Outcome]' role='dimension' type='nominal' />
+      <column caption='my trade journal' datatype='table' name='[__tableau_internal_object_id__].[my trade journal_C67A09DBC5F840F48681EDF6E9D6A617]' role='measure' type='quantitative' />
+      <column-instance column='[Coin]' derivation='None' name='[none:Coin:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Leverage]' derivation='None' name='[none:Leverage:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Trade Outcome]' derivation='None' name='[none:Trade Outcome:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/USERPC~1/AppData/Local/Temp/TableauTemp/#TableauTemp_0tg40yp1rexw1v14y031w01zxnoq.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/27/2025 01:26:19 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>my trade journal</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[my trade journal_C67A09DBC5F840F48681EDF6E9D6A617]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Coin</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Coin]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Coin</remote-alias>
+              <ordinal>1</ordinal>
+              <family>my trade journal</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[my trade journal_C67A09DBC5F840F48681EDF6E9D6A617]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Entry Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Entry Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Entry Price</remote-alias>
+              <ordinal>2</ordinal>
+              <family>my trade journal</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[my trade journal_C67A09DBC5F840F48681EDF6E9D6A617]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Exit Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Exit Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Exit Price</remote-alias>
+              <ordinal>3</ordinal>
+              <family>my trade journal</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[my trade journal_C67A09DBC5F840F48681EDF6E9D6A617]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ROI %</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ROI %]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ROI %</remote-alias>
+              <ordinal>4</ordinal>
+              <family>my trade journal</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[my trade journal_C67A09DBC5F840F48681EDF6E9D6A617]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Leverage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Leverage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Leverage</remote-alias>
+              <ordinal>5</ordinal>
+              <family>my trade journal</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[my trade journal_C67A09DBC5F840F48681EDF6E9D6A617]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Trade Outcome</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Trade Outcome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Trade Outcome</remote-alias>
+              <ordinal>6</ordinal>
+              <family>my trade journal</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[my trade journal_C67A09DBC5F840F48681EDF6E9D6A617]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Leverage:nk]' palette='gray_warm_10_0' type='palette'>
+            <map to='#59504e'>
+              <bucket>&quot;12.5x&quot;</bucket>
+            </map>
+            <map to='#98908c'>
+              <bucket>&quot;10x&quot;</bucket>
+            </map>
+            <map to='#dcd4d0'>
+              <bucket>&quot;5x&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Trade Outcome:nk]' palette='gray_warm_10_0' type='palette'>
+            <map to='#59504e'>
+              <bucket>&quot;win&quot;</bucket>
+            </map>
+            <map to='#867e7b'>
+              <bucket>&quot;loss&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Coin:nk]' palette='gray_warm_10_0' type='palette'>
+            <map to='#59504e'>
+              <bucket>&quot;USUAL/USDT&quot;</bucket>
+            </map>
+            <map to='#5e5452'>
+              <bucket>&quot;TUT/USDT&quot;</bucket>
+            </map>
+            <map to='#635957'>
+              <bucket>&quot;SAFE/USDT&quot;</bucket>
+            </map>
+            <map to='#685e5c'>
+              <bucket>&quot;REZ/USDT&quot;</bucket>
+            </map>
+            <map to='#6d6361'>
+              <bucket>&quot;PENGU/USDT&quot;</bucket>
+            </map>
+            <map to='#726866'>
+              <bucket>&quot;MYRO/USDT&quot;</bucket>
+            </map>
+            <map to='#766d6b'>
+              <bucket>&quot;MEW/USDT&quot;</bucket>
+            </map>
+            <map to='#7b7370'>
+              <bucket>&quot;LUCE/USDT&quot;</bucket>
+            </map>
+            <map to='#807875'>
+              <bucket>&quot;LTC/USDT&quot;</bucket>
+            </map>
+            <map to='#857d7a'>
+              <bucket>&quot;LAI/USDT&quot;</bucket>
+            </map>
+            <map to='#8b827f'>
+              <bucket>&quot;IP/USDT&quot;</bucket>
+            </map>
+            <map to='#908784'>
+              <bucket>&quot;HIGH/USDT&quot;</bucket>
+            </map>
+            <map to='#958d89'>
+              <bucket>&quot;FUEL/USDT&quot;</bucket>
+            </map>
+            <map to='#9a928e'>
+              <bucket>&quot;FORTH/USDT&quot;</bucket>
+            </map>
+            <map to='#9f9793'>
+              <bucket>&quot;FARTCOIN/USDT&quot;</bucket>
+            </map>
+            <map to='#a59c99'>
+              <bucket>&quot;DRIFT/USDT&quot;</bucket>
+            </map>
+            <map to='#aaa19e'>
+              <bucket>&quot;DODGE/USDT&quot;</bucket>
+            </map>
+            <map to='#b0a7a4'>
+              <bucket>&quot;BTC/USDT&quot;</bucket>
+            </map>
+            <map to='#b5aca9'>
+              <bucket>&quot;BNB/USDT&quot;</bucket>
+            </map>
+            <map to='#bab2ae'>
+              <bucket>&quot;AVAX/USDT&quot;</bucket>
+            </map>
+            <map to='#c0b8b4'>
+              <bucket>&quot;AUDIO/USDT&quot;</bucket>
+            </map>
+            <map to='#c5bdb9'>
+              <bucket>&quot;ARK/USDT&quot;</bucket>
+            </map>
+            <map to='#cbc2be'>
+              <bucket>&quot;ALPACA/USDT&quot;</bucket>
+            </map>
+            <map to='#d0c8c4'>
+              <bucket>&quot;AAVE/USDT&quot;</bucket>
+            </map>
+            <map to='#d6ceca'>
+              <bucket>&quot;10000LADYS/USDT&quot;</bucket>
+            </map>
+            <map to='#dcd4d0'>
+              <bucket>&quot;1000RATS/USDT&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Nigeria&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Date' />
+        <field-sort-custom-order field='Coin' />
+        <field-sort-custom-order field='Entry Price' />
+        <field-sort-custom-order field='Exit Price' />
+        <field-sort-custom-order field='ROI %' />
+        <field-sort-custom-order field='Calculation_990791921884807169' />
+        <field-sort-custom-order field='Leverage' />
+        <field-sort-custom-order field='Trade Outcome' />
+        <field-sort-custom-order field='Calculation_423619843796164610' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Primary Leverage' datatype='string' name='[Parameter 1]' param-domain-type='any' role='measure' type='nominal' value='&quot;10x&quot;'>
+          <calculation class='tableau' formula='&quot;10x&quot;' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='my trade journal' id='my trade journal_C67A09DBC5F840F48681EDF6E9D6A617'>
+            <properties context=''>
+              <relation connection='excel-direct.0rsy5yq0rm5tvc12xkkyo1vtjnyk' name='my trade journal' table='[&apos;my trade journal$&apos;]' type='table'>
+                <columns gridOrigin='A1:G28:no:A1:G28:0' header='yes' outcome='6'>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='string' name='Coin' ordinal='1' />
+                  <column datatype='real' name='Entry Price' ordinal='2' />
+                  <column datatype='real' name='Exit Price' ordinal='3' />
+                  <column datatype='real' name='ROI %' ordinal='4' />
+                  <column datatype='string' name='Leverage' ordinal='5' />
+                  <column datatype='string' name='Trade Outcome' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.14b1h8d0u9d5xr148i0j5100dtlo'>
+      <datasources>
+        <datasource caption='my trade journal (my trade journal)' name='federated.14b1h8d0u9d5xr148i0j5100dtlo' />
+      </datasources>
+      <datasource-dependencies datasource='federated.14b1h8d0u9d5xr148i0j5100dtlo'>
+        <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+        <column datatype='string' name='[Trade Outcome]' role='dimension' type='nominal' />
+        <column-instance column='[Trade Outcome]' derivation='None' name='[none:Trade Outcome:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]'>
+        <groupfilter function='level-members' level='[none:Trade Outcome:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[tmn:Date:ok]'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[tmn:Date:ok]' />
+          <groupfilter function='member' level='[tmn:Date:ok]' member='#2025-02-01 00:00:00#' />
+        </groupfilter>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Leverage mode'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='my trade journal (my trade journal)' name='federated.14b1h8d0u9d5xr148i0j5100dtlo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14b1h8d0u9d5xr148i0j5100dtlo'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' datatype-customized='true' name='[Leverage]' role='dimension' type='nominal' />
+            <column caption='Roi %' datatype='real' name='[ROI %]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Trade Outcome]' role='dimension' type='nominal' />
+            <column-instance column='[ROI %]' derivation='Count' name='[cnt:ROI %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Leverage]' derivation='None' name='[none:Leverage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Trade Outcome]' derivation='None' name='[none:Trade Outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[tmn:Date:ok]</column>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e8e8e8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Segoe UI Light' />
+            <format attr='font-style' value='italic' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#4f654b' />
+            <format attr='font-family' value='Palatino Linotype' />
+            <format attr='font-size' value='12' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#b6a89d' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[cnt:ROI %:qk]' />
+              <text column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Leverage:nk]' />
+              <color column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Leverage:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{17F84CBB-7B4C-40D5-8921-AABBB2484D04}' />
+    </worksheet>
+    <worksheet name='Loss Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='my trade journal (my trade journal)' name='federated.14b1h8d0u9d5xr148i0j5100dtlo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14b1h8d0u9d5xr148i0j5100dtlo'>
+            <column caption='Loss Rate ' datatype='real' name='[Calculation_990791922119880712]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum(IF[Trade Outcome]=&quot;loss&quot; THEN 1 ELSE 0 END) / COUNT([Trade Outcome])' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Trade Outcome]' role='dimension' type='nominal' />
+            <column-instance column='[Trade Outcome]' derivation='None' name='[none:Trade Outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_990791922119880712]' derivation='User' name='[usr:Calculation_990791922119880712:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[tmn:Date:ok]</column>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[usr:Calculation_990791922119880712:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' value='Palatino Linotype' />
+            <format attr='font-size' value='14' />
+            <format attr='color' value='#dde5d0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e8e8e8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#333333' />
+            <format attr='font-family' value='Segoe UI Light' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#e5e5e5' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#4f654b' />
+            <format attr='font-family' value='Palatino Linotype' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#b6a89d' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[usr:Calculation_990791922119880712:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F57BB730-4D82-4063-9081-B90E1D05DE37}' />
+    </worksheet>
+    <worksheet name='Monthly ROI Trend '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='my trade journal (my trade journal)' name='federated.14b1h8d0u9d5xr148i0j5100dtlo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14b1h8d0u9d5xr148i0j5100dtlo'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Roi %' datatype='real' name='[ROI %]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Trade Outcome]' role='dimension' type='nominal' />
+            <column-instance column='[ROI %]' derivation='Avg' name='[avg:ROI %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Trade Outcome]' derivation='None' name='[none:Trade Outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ROI %]' derivation='Sum' name='[sum:ROI %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[tmn:Date:ok]</column>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='dashed' />
+            <format attr='stroke-color' value='#dde5d0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[avg:ROI %:qk]' value='#e5e5e5' />
+            <format attr='color' field='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[tmn:Date:qk]' value='#e5e5e5' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[sum:ROI %:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#e1dfdf</color>
+                <color>#d2cecd</color>
+                <color>#c3bdbc</color>
+                <color>#b4acab</color>
+                <color>#a59c9a</color>
+                <color>#958c8a</color>
+                <color>#867d7a</color>
+                <color>#776d6b</color>
+                <color>#685e5c</color>
+                <color>#59504e</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#f5f5f0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e8e8e8' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#333333' />
+            <format attr='font-family' value='Segoe UI Light' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' value='#dde5d0' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='dotted' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='Palatino Linotype' />
+            <format attr='color' value='#4f654b' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='color' field='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[avg:ROI %:qk]' value='#6b5d4d' />
+            <format attr='color' field='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[tmn:Date:qk]' value='#6b5d4d' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#b6a89d' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[sum:ROI %:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-markers-mode' value='none' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[avg:ROI %:qk]</rows>
+        <cols>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[tmn:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{23075721-B434-42A8-A0D3-879A8E823A5B}' />
+    </worksheet>
+    <worksheet name='Outcome Porpotions'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='my trade journal (my trade journal)' name='federated.14b1h8d0u9d5xr148i0j5100dtlo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14b1h8d0u9d5xr148i0j5100dtlo'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Trade Outcome]' role='dimension' type='nominal' />
+            <column-instance column='[Trade Outcome]' derivation='Count' name='[cnt:Trade Outcome:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Trade Outcome]' derivation='None' name='[none:Trade Outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[mn:Date:ok]'>
+            <groupfilter function='level-members' level='[mn:Date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[mn:Date:ok]</column>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]</column>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[tmn:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e8e8e8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#333333' />
+            <format attr='font-family' value='Segoe UI Light' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-family' value='Palatino Linotype' />
+            <format attr='color' value='#4f654b' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]' value='Select Trade Outcome'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#4f654b' fontname='Palatino Linotype' fontsize='9'>Select Trade Outcome</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[mn:Date:ok]' value='Select Month '>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#4f654b' fontname='Palatino Linotype' fontsize='9'>Select Month </run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#b6a89d' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]' />
+              <wedge-size column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[cnt:Trade Outcome:qk]' />
+              <text column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.5272375345230103' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C86EE748-AE45-4B26-A47E-23164C9BFC63}' />
+    </worksheet>
+    <worksheet name='ROI by Outcome'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='my trade journal (my trade journal)' name='federated.14b1h8d0u9d5xr148i0j5100dtlo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14b1h8d0u9d5xr148i0j5100dtlo'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Roi %' datatype='real' name='[ROI %]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Trade Outcome]' role='dimension' type='nominal' />
+            <column-instance column='[Trade Outcome]' derivation='Count' name='[cnt:Trade Outcome:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Trade Outcome]' derivation='None' name='[none:Trade Outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ROI %]' derivation='Sum' name='[sum:ROI %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]</column>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[tmn:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-color' value='#dde5d0' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='dashed' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e8e8e8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#333333' />
+            <format attr='font-family' value='Segoe UI Light' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' value='#dde5d0' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='dotted' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#4f654b' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='Palatino Linotype' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#b6a89d' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]' />
+              <lod column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[cnt:Trade Outcome:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='231' />
+                <format attr='maxheight' value='231' />
+                <format attr='minwidth' value='400' />
+                <format attr='maxwidth' value='400' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[sum:ROI %:qk]</rows>
+        <cols>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[mn:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{A0757D73-AF6F-4ED4-8B75-572599C413FB}' />
+    </worksheet>
+    <worksheet name='Top Performing Coins'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='my trade journal (my trade journal)' name='federated.14b1h8d0u9d5xr148i0j5100dtlo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14b1h8d0u9d5xr148i0j5100dtlo'>
+            <column datatype='string' name='[Coin]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Roi %' datatype='real' name='[ROI %]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Trade Outcome]' role='dimension' type='nominal' />
+            <column-instance column='[Coin]' derivation='None' name='[none:Coin:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Trade Outcome]' derivation='None' name='[none:Trade Outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ROI %]' derivation='Sum' name='[sum:ROI %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]</column>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[tmn:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#8a9a5b' />
+            <format attr='stroke-color' value='#8a9a5b' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='dotted' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' value='#333333' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' value='Palatino Linotype' />
+            <format attr='color' value='#4f654b' />
+            <format attr='font-size' value='14' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e8e8e8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Segoe UI Light' />
+            <format attr='color' value='#333333' />
+            <format attr='font-weight' value='normal' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-color' value='#8a9a5b' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='dotted' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' scope='rows' value='#8a9a5b4b' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' value='#8a9a5b' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='dotted' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#4f654b' />
+            <format attr='font-family' value='Palatino Linotype' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#b6a89d' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[sum:ROI %:qk]' />
+              <color column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Coin:nk]' />
+              <text column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Coin:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#e5e5e5' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6FF75E8E-508D-40BD-B788-1EBDDBBCB672}' />
+    </worksheet>
+    <worksheet name='Trade ROI Comparison'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='my trade journal (my trade journal)' name='federated.14b1h8d0u9d5xr148i0j5100dtlo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14b1h8d0u9d5xr148i0j5100dtlo'>
+            <column datatype='string' name='[Coin]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Roi %' datatype='real' name='[ROI %]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Trade Outcome]' role='dimension' type='nominal' />
+            <column-instance column='[ROI %]' derivation='Avg' name='[avg:ROI %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Coin]' derivation='None' name='[none:Coin:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Trade Outcome]' derivation='None' name='[none:Trade Outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ROI %]' derivation='Sum' name='[sum:ROI %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]</column>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[tmn:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-size' data-class='subtotal' scope='rows' value='16' />
+            <format attr='color' data-class='total' scope='rows' value='#555555' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' value='11' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[sum:ROI %:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='size-bar' field='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[avg:ROI %:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[sum:ROI %:qk]' palette='gray_warm_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e8e8e8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#333333' />
+            <format attr='font-family' value='Segoe UI Light' />
+            <format attr='font-style' value='normal' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='dotted' />
+            <format attr='stroke-color' scope='rows' value='#f5f5f0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' value='dotted' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-family' value='Palatino Linotype' />
+            <format attr='color' value='#4f654b' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#b6a89d' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[sum:ROI %:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[avg:ROI %:qk]</rows>
+        <cols>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Coin:nk]</cols>
+      </table>
+      <simple-id uuid='{CFD07FC4-DF59-4FCB-BFDB-046136401C0E}' />
+    </worksheet>
+    <worksheet name='Volatility Index'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='my trade journal (my trade journal)' name='federated.14b1h8d0u9d5xr148i0j5100dtlo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14b1h8d0u9d5xr148i0j5100dtlo'>
+            <column caption='Volatility Index' datatype='real' name='[Calculation_990791921884807169]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='STDEV([ROI %])' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Roi %' datatype='real' name='[ROI %]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Trade Outcome]' role='dimension' type='nominal' />
+            <column-instance column='[Trade Outcome]' derivation='None' name='[none:Trade Outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_990791921884807169]' derivation='User' name='[usr:Calculation_990791921884807169:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[tmn:Date:ok]</column>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[usr:Calculation_990791921884807169:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' value='14' />
+            <format attr='color' value='#4f654b' />
+            <format attr='font-family' value='Palatino Linotype' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e8e8e8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Segoe UI Light' />
+            <format attr='font-weight' value='normal' />
+            <format attr='font-size' value='10' />
+            <format attr='color' value='#333333' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-family' value='Palatino Linotype' />
+            <format attr='color' value='#4f654b' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#b6a89d' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[usr:Calculation_990791921884807169:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F27B0459-34B7-4D48-A045-E4FD291A138C}' />
+    </worksheet>
+    <worksheet name='Win Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='my trade journal (my trade journal)' name='federated.14b1h8d0u9d5xr148i0j5100dtlo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14b1h8d0u9d5xr148i0j5100dtlo'>
+            <column caption='Win Rate' datatype='real' name='[Calculation_990791921882759168]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum(IF[Trade Outcome]=&quot;win&quot; THEN 1 ELSE 0 END) / COUNT([Trade Outcome])' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Trade Outcome]' role='dimension' type='nominal' />
+            <column-instance column='[Trade Outcome]' derivation='None' name='[none:Trade Outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_990791921882759168]' derivation='User' name='[usr:Calculation_990791921882759168:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[tmn:Date:ok]</column>
+            <column>[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[usr:Calculation_990791921882759168:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' value='#4f654b' />
+            <format attr='background-color' data-class='total' value='#4f654b' />
+            <format attr='band-color' scope='rows' value='#4f654b' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e8e8e8' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#333333' />
+            <format attr='font-family' value='Segoe UI Light' />
+            <format attr='font-weight' value='normal' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#4f654b' />
+            <format attr='font-family' value='Palatino Linotype' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#b6a89d' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[usr:Calculation_990791921882759168:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A2748DC9-F3ED-47C7-BE6A-3F9136E21627}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='900' maxwidth='1400' minheight='900' minwidth='1400' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='my trade journal (my trade journal)' name='federated.14b1h8d0u9d5xr148i0j5100dtlo' />
+      </datasources>
+      <datasource-dependencies datasource='federated.14b1h8d0u9d5xr148i0j5100dtlo'>
+        <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+        <column datatype='string' name='[Trade Outcome]' role='dimension' type='nominal' />
+        <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[Trade Outcome]' derivation='None' name='[none:Trade Outcome:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='32' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='44' is-centered='0' param='C:/Users/USER PC/Downloads/Untitled design(2).png' type-v2='bitmap' w='100000' x='0' y='0'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='35444' id='15' name='ROI by Outcome' w='30714' x='2929' y='61778'>
+          <layout-cache has-max-size-h='true' has-max-size-w='true' maxheight='336' maxwidth='470' minheight='336' minwidth='470' type-h='scalable' type-w='scalable' />
+        </zone>
+        <zone h='39333' id='19' name='Monthly ROI Trend ' w='29071' x='65143' y='20000'>
+          <layout-cache minheight='205' type-h='scalable' type-w='fixed' />
+        </zone>
+        <zone h='39444' id='20' name='Top Performing Coins' w='37143' x='2571' y='19889' />
+        <zone h='39556' id='25' name='Outcome Porpotions' w='24000' x='40286' y='19778' />
+        <zone h='35667' id='29' name='Trade ROI Comparison' w='37214' x='57286' y='61444' />
+        <zone h='35444' id='30' name='Leverage mode' w='21643' x='34429' y='61667' />
+        <zone forceUpdate='true' h='8444' id='31' type-v2='text' w='33500' x='18143' y='1000'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4f654b' fontname='Palatino Linotype' fontsize='16'>MY TRADE JOURNAL</run>
+          </formatted-text>
+        </zone>
+        <zone h='7889' id='33' name='Win Rate' w='11714' x='20857' y='11000' />
+        <zone h='8000' id='34' name='Volatility Index' w='11714' x='8214' y='10889' />
+        <zone h='8222' id='35' name='Loss Rate' w='12071' x='33571' y='10667' />
+        <zone h='5444' id='36' mode='dropdown' name='Outcome Porpotions' param='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]' type-v2='filter' values='database' w='11429' x='61143' y='13111' />
+        <zone h='5556' id='37' mode='slider' name='Outcome Porpotions' param='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[mn:Date:ok]' type-v2='filter' values='relevant' w='12857' x='73429' y='12889' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2500' minheight='2500' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='48' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='47' param='vert' type-v2='layout-flow' w='98858' x='571' y='889'>
+                <zone fixed-size='280' h='100000' id='44' is-centered='0' is-fixed='true' param='C:/Users/USER PC/Downloads/Untitled design(2).png' type-v2='bitmap' w='100000' x='0' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='8444' id='31' type-v2='text' w='33500' x='18143' y='1000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#4f654b' fontname='Palatino Linotype' fontsize='16'>MY TRADE JOURNAL</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='74' h='8222' id='35' is-fixed='true' name='Loss Rate' w='12071' x='33571' y='10667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='72' h='8000' id='34' is-fixed='true' name='Volatility Index' w='11714' x='8214' y='10889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='71' h='7889' id='33' is-fixed='true' name='Win Rate' w='11714' x='20857' y='11000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5444' id='36' mode='dropdown' name='Outcome Porpotions' param='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]' type-v2='filter' values='database' w='11429' x='61143' y='13111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5556' id='37' mode='slider' name='Outcome Porpotions' param='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[mn:Date:ok]' type-v2='filter' values='relevant' w='12857' x='73429' y='12889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39556' id='25' is-fixed='true' name='Outcome Porpotions' w='24000' x='40286' y='19778'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39444' id='20' is-fixed='true' name='Top Performing Coins' w='37143' x='2571' y='19889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39333' id='19' is-fixed='true' name='Monthly ROI Trend ' w='29071' x='65143' y='20000'>
+                  <layout-cache minheight='205' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35667' id='29' is-fixed='true' name='Trade ROI Comparison' w='37214' x='57286' y='61444'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35444' id='30' is-fixed='true' name='Leverage mode' w='21643' x='34429' y='61667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35444' id='15' is-fixed='true' name='ROI by Outcome' w='30714' x='2929' y='61778'>
+                  <layout-cache has-max-size-h='true' has-max-size-w='true' maxheight='336' maxwidth='470' minheight='336' minwidth='470' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{69BB4655-671F-4F48-B852-2FD0AA15807A}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='ROI by Outcome'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{24D942EF-8224-4C5C-8991-0DAE7A8666E3}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Leverage mode'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Loss Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Monthly ROI Trend '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Outcome Porpotions'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='ROI by Outcome'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top Performing Coins'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Trade ROI Comparison'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Volatility Index'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Win Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='20' />
+      <device-preview visible='true'>
+        <device is-portrait='false' type='Desktop' />
+      </device-preview>
+      <simple-id uuid='{7FB11D9A-3782-4661-9D4A-A59C475AC5C3}' />
+    </window>
+    <window class='worksheet' name='Monthly ROI Trend '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[sum:ROI %:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{238D9365-6347-4F8B-8CE9-40FAE03754BE}' />
+    </window>
+    <window class='worksheet' name='Top Performing Coins'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Coin:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B59ADEA6-D4A6-4897-B3DF-5616321711CA}' />
+    </window>
+    <window class='worksheet' name='Outcome Porpotions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Trade Outcome:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{8F84D092-DC50-499D-9505-0235CE94D580}' />
+    </window>
+    <window class='worksheet' name='Trade ROI Comparison'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[sum:ROI %:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{86AD86A2-BA39-47B2-AF19-63266F218681}' />
+    </window>
+    <window class='worksheet' name='Leverage mode'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+            <card pane-specification-id='0' param='[federated.14b1h8d0u9d5xr148i0j5100dtlo].[none:Leverage:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{862E9877-11C9-4149-8359-7E918481A7C5}' />
+    </window>
+    <window class='worksheet' name='Win Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8A2D536B-9C5F-4197-87D9-A3E1023B40A8}' />
+    </window>
+    <window class='worksheet' name='Volatility Index'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BB37CED8-CE99-48F1-BB02-6FB06DC9652B}' />
+    </window>
+    <window class='worksheet' name='Loss Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C81D267E-5104-4C95-9C7D-C8B15D4F5619}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
